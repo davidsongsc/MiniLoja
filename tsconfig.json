@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
+    "module": "esnext",
     "target": "es5",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
     "lib": [
       "dom",
       "dom.iterable",

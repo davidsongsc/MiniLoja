@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Header from './Header';
+import Footer from './Footer';
+import ProductDetails from './ProdutoDetalhes';
+import ListaProdutos from './ListaProdutos';
+import './disnone.css';
+const App: React.FC = () => {
+  const getProductById = (id: string) => {
+    // Lógica para obter os detalhes do produto com base no ID
+    // Substitua por sua implementação real
+    return { id, name: 'Product Name', price: 9.99 };
+  };
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<ListaProdutos />} />
+        <Route path="/sobre" element={<Home />} />
+        <Route path="/produtos" element={<ListaProdutos />} />
+        <Route
+          path="/produtos/:id"
+          element={<ProductDetails getProductById={getProductById} />}
+        />
+        {/* Adicione mais rotas para outras páginas */}
+        {/* Adicione mais rotas para outras páginas */}
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
