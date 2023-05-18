@@ -50,27 +50,3 @@ code {
   }
 }
 
-a{
-  color: black;
-  margin: 5px 0;
-}
-@media screen and (max-width: 800px) {
-  .op-index-map {
-      display: none;
-  }
-
-  .menusanduiche div {
-      width: 30px;
-      height: 3px;
-      background-color: black;
-      margin: 5px 50px;
-  }
-
-  .logo {
-
-      position: relative;
-  }
-  .content-footer{
-      flex-wrap: wrap;
-  }
-}
