@@ -5,7 +5,6 @@ import Header from './Header';
 import Footer from './Footer';
 import ProductDetails from './ProdutoDetalhes';
 import ListaProdutos from './ListaProdutos';
-import './disnone.css';
 const App: React.FC = () => {
   const getProductById = (id: string) => {
     // Lógica para obter os detalhes do produto com base no ID
