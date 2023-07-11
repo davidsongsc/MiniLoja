@@ -40,11 +40,11 @@ const Header: React.FC = () => {
         width: '70%',
         justifyContent: 'space-around'
       }}>
-        <IconeShop width="24px" height="24px" color="black" />
-        <IconeLook width="24px" height="24px" color="black" />
-        <IconeLogin width="24px" height="24px" color="black" />
-        <IconeCarrinho width="24px" height="24px" color="black" />
-        <IconePesquisa width="24px" height="24px" color="black" />
+      <a href='/'>    <IconeShop width="24px" height="24px" color="black" /> </a>
+      <a href='/'>   <IconeLook width="24px" height="24px" color="black" /></a>
+      <a href='/'>  <IconeLogin width="24px" height="24px" color="black" /></a>
+      <a href='/'>   <IconeCarrinho width="24px" height="24px" color="black" /></a>
+      <a href='/'>   <IconePesquisa width="24px" height="24px" color="black" /></a>
       </div>
     </header>
   );

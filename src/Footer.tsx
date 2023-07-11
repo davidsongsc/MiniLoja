@@ -101,10 +101,10 @@ const Footer: React.FC = () => {
           alignItems: 'flex-end'
         }}>
           <text>
-            política de privacidade
+          <a href='/'>   política de privacidade</a>
           </text>
           <text>
-            política de devoluções
+            <a href='/'> política de devoluções</a>
           </text>
         </div>
       </div>
